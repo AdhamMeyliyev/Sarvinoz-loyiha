@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biz haqimizda | Muammoli Ta’lim</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    /* Background gradient for header */
+    .about-header {
+      background: linear-gradient(to right, #00B074, #1E1E2F);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    .about-header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    /* Section title */
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1E1E2F;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #1E1E2F;
+      color: white;
+      padding: 20px 0;
+    }
+
+    /* List styling with icons */
+    .feature-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .feature-list li {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 30px;
+      color: #009061;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      cursor: default;
+    }
+    .feature-list li::before {
+      content: "\f058"; /* Bootstrap icon "check-circle-fill" unicode */
+      font-family: "bootstrap-icons";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #00B074;
+      font-size: 1.3rem;
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+    .feature-list li:hover {
+      color: #00663b;
+    }
+    .feature-list li:hover::before {
+      color: #00663b;
+      transform: scale(1.2);
+    }
+
+    /* Image hover effect */
+    .about-image {
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+    .about-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Navbar brand hover effect */
+    .navbar-brand:hover {
+      color: #00B074 !important;
+      transition: color 0.3s ease;
+    }
+
+    /* Navbar active link highlight */
+    .nav-link.active {
+      color: #00B074 !important;
+      font-weight: 600;
+      position: relative;
+    }
+    .nav-link.active::after {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 3px;
+      /* background-color: #00B074; */
+      margin: 4px auto 0 auto;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><b>MuammoliTa'lim</b> <i class="bi bi-lightning-fill"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html"><i class="bi bi-house-door-fill me-1"></i>Bosh sahifa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle-fill me-1"></i>Haqida</a></li>
+          <li class="nav-item"><a class="nav-link" href="platforms.html"><i class="bi bi-laptop-fill me-1"></i>Platformalar</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope-fill me-1"></i>Bog‘lanish</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="about-header" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100">
+    <div class="container">
+      <h1>Bizning loyiha haqida <i class="bi bi-info-circle-fill"></i></h1>
+      <p class="lead mt-3">Muammoli ta’limni interaktiv taqdimotlar orqali yanada samaraliroq qilish yo‘lida</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+          <h2 class="section-title">Loyiha maqsadi <i class="bi bi-bullseye"></i></h2>
+          <p>
+            Ushbu loyiha orqali o‘quvchilarga muammoli ta’lim metodikasini tushunarli, vizual va interaktiv tarzda yetkazish maqsad qilingan.
+            Interaktiv platformalar yordamida bilim olish jarayoni osonlashadi, qiziqarli bo‘ladi va talabalarda mustaqil fikrlash rivojlanadi.
+          </p>
+          <p>
+            Dastur quyidagilarga xizmat qiladi:
+          </p>
+          <ul class="feature-list">
+            <li>Muammoli ta’lim haqida tushuncha berish <i class="bi bi-book-fill"></i></li>
+            <li>Platformalarni ko‘rsatish va ishlatishni o‘rgatish <i class="bi bi-laptop-fill"></i></li>
+            <li>Interaktiv videolar va resurslar orqali o‘quvchini jalb qilish <i class="bi bi-play-btn-fill"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+          <img src="assets/img/about-illustration.png" alt="Biz haqimizda" class="img-fluid about-image shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 MuammoliTa’lim.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // Animatsiya faqat bir marta ishlaydi
+      easing: 'ease-in-out',
+      duration: 1000,
+    });
+  </script>
+
+</body>
+</html>
